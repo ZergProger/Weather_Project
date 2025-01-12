@@ -14,9 +14,7 @@ final dio = Dio();
 void main() {
   GetIt.I.registerLazySingleton<AbstractWeatherRepository>(() => WeatherRepository(dio: dio));
   GetIt.I.registerSingleton(WeatherRepository(dio: dio));
-  runApp(const MaterialApp(
-    home: HomePage(),
-  ));
+  runApp(MainScreen());
 }
 
 class MainScreen extends StatelessWidget {
