@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+
+class AppStyles {
+  const AppStyles._();
+
+  static const headerSpecial1 = TextStyle(
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+  );
+  static const headerSpecial2 = TextStyle(
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+    fontSize: 25,
+  );
+  static const headerSpecial3 = TextStyle(
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+    fontSize: 20,
+  );
+  }
