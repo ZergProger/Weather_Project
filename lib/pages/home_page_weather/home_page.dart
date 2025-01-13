@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
-import 'package:weather_project/pages/home_page_weather/widget_home_page/list_tile_widget.dart';
+import 'package:weather_project/pages/home_page_weather/widgets/list_tile_widget.dart';
 import 'package:weather_project/bloc/weather_bloc.dart';
 import 'package:weather_project/res/texts.dart';
 import 'package:weather_project/pages/setting_page/settings.dart';

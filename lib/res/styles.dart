@@ -17,4 +17,9 @@ class AppStyles {
     color: Colors.white,
     fontSize: 20,
   );
-  }
+  static const headerSpecial4 = TextStyle(
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+    fontSize: 20,
+  );
+}
