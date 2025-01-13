@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:weather_project/pages/dop_info_page/widget_dopinfo/dop_info_text.dart';
-import 'package:weather_project/res/styles.dart';
 import 'package:weather_project/res/texts.dart';
 import 'package:weather_project/res/theme.dart';
 import 'package:weather_project/weather_repository/abstract_weather_repository.dart';
