@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_project/rec/theme.dart';
+import 'package:weather_project/res/texts.dart';
+import 'package:weather_project/res/theme.dart';
 
 class Settings extends StatelessWidget {
   const Settings({super.key});
@@ -8,9 +9,10 @@ class Settings extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: AppTheme.lightTheme,
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Setting'),
+          title: Text(AppTexts.textSettings),
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);

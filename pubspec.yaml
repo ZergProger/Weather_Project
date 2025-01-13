@@ -13,9 +13,10 @@ dependencies:
     sdk: flutter
   dio: ^5.7.0
   jiffy: ^5.0.0
-  flutter_bloc: ^8.1.6
+  flutter_bloc: ^9.0.0
   get_it: ^8.0.3
-  bloc: ^8.1.4
+  bloc: ^9.0.0
+  flutter_bounce: ^1.1.0
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_project/Pages/dop_info_weather.dart';
-import 'package:weather_project/rec/styles.dart';
+import 'package:weather_project/pages/dop_info_page/dop_info_weather.dart';
+import 'package:weather_project/res/styles.dart';
 import 'package:weather_project/weather_repository/weather_data.dart';
 
 class ListTileWidget extends StatelessWidget {
