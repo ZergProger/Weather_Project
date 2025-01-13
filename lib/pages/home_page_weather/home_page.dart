@@ -5,7 +5,9 @@ import 'package:weather_project/pages/home_page_weather/widget_home_page/list_ti
 import 'package:weather_project/bloc/weather_bloc.dart';
 import 'package:weather_project/res/texts.dart';
 import 'package:weather_project/pages/setting_page/settings.dart';
+import 'package:weather_project/utils/route_name.dart';
 import 'package:weather_project/weather_repository/abstract_weather_repository.dart';
+import 'package:bounce/bounce.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -29,11 +31,18 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text(AppTexts.textWeather),
           actions: [
-            IconButton(
-              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Settings())),
-              icon: Icon(Icons.settings),
-              color: Colors.white,
-              iconSize: 25,
+            Padding(
+              padding: const EdgeInsets.only(right: 15, bottom: 9),
+              child: Bounce(
+                duration: const Duration(milliseconds: 100),
+                onTap: () => Navigator.pushNamed(context, route(Settings)),
+                child: Image.network(
+                  'https://www.pngkit.com/png/full/134-1344977_setting-clipart-logo-png-technical-services-icon.png',
+                  width: 30,
+                  height: 30,
+                  color: Colors.white,
+                ),
+              ),
             )
           ],
         ),
