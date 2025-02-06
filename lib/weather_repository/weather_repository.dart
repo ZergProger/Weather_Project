@@ -27,10 +27,12 @@ class WeatherRepository implements AbstractWeatherRepository {
         final tempMin = (main['temp_min'] as double).toDouble();
         final tempMax = (main['temp_max'] as double).toDouble();
 
-        DateTime dateTime1 = DateTime.fromMillisecondsSinceEpoch(dateUnix * 1000);
+        DateTime dateTime1 =
+            DateTime.fromMillisecondsSinceEpoch(dateUnix * 1000);
         String formattedDateHourMin = Jiffy(dateTime1).format("dd.MM HH:mm");
 
-        DateTime dateTime2 = DateTime.fromMillisecondsSinceEpoch(dateUnix * 1000);
+        DateTime dateTime2 =
+            DateTime.fromMillisecondsSinceEpoch(dateUnix * 1000);
         String formattedDateHour = Jiffy(dateTime2).format("dd.MM");
 
         int tempr = temp.round();

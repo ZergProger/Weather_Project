@@ -6,6 +6,6 @@ import 'package:weather_project/utils/route_name.dart';
 Map<String, WidgetBuilder> generateRoutes() {
   return {
     route(HomePage): (_) => const HomePage(),
-    route(Settings): (_) => const Settings(),
+    route(Settings): (_) => Settings(),
   };
 }

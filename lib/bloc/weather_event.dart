@@ -1,5 +1,11 @@
 part of blocLibrary;
 
-class WeatherListEvent {}
+abstract class WeatherEvent extends Equatable {}
 
-class WeatherListLoad extends WeatherListEvent {}
+class WeatherListLoad extends WeatherEvent {
+  WeatherListLoad({this.completer});
+  final Completer? completer;
+
+  @override
+  List<Object?> get props => [];
+}
