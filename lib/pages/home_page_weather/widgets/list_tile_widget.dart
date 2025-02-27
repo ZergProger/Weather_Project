@@ -20,10 +20,11 @@ class ListTileWidget extends StatelessWidget {
           style: AppStyles.headerSpecial1,
         ),
         subtitle: Text(data.dateMin, style: AppStyles.headerSpecial1),
-        leading: Image.network('https://openweathermap.org/img/wn/${data.idImage}@2x.png'),
+        leading: Image.network(
+            'https://openweathermap.org/img/wn/${data.idImage}@2x.png'),
         trailing: const Icon(
           Icons.arrow_forward_ios,
-          color: Colors.white,
+          color: Colors.black,
         ),
         onTap: () => Navigator.push(
             context,

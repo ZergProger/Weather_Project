@@ -2,16 +2,23 @@ import 'package:dio/dio.dart';
 import 'package:weather_project/weather_repository/abstract_weather_repository.dart';
 import 'package:weather_project/weather_repository/weather_data.dart';
 import 'package:jiffy/jiffy.dart';
+import 'package:geolocator/geolocator.dart';
 
 class WeatherRepository implements AbstractWeatherRepository {
-  WeatherRepository({required this.dio});
+  WeatherRepository({
+    required this.dio,
+    required this.geolocator,
+  });
   final Dio dio;
+  final Future<Position> geolocator;
 
   @override
   Future<List<WeatherData>> getWeatherData() async {
     try {
+      Position position = await geolocator;
+
       final response = await dio.get(
-          'https://api.openweathermap.org/data/2.5/forecast?lat=44.24&lon=26.05&appid=a62303ba67511e46322636e2b86ef269&lang=ru&units=metric');
+          'https://api.openweathermap.org/data/2.5/forecast?lat=${position.latitude}&lon=${position.longitude}&appid=a62303ba67511e46322636e2b86ef269&lang=ru&units=metric');
       final data = response.data as Map<String, dynamic>;
       final dataWeatherList = data['list'] as List<dynamic>;
 

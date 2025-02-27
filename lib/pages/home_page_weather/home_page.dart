@@ -3,8 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:weather_project/bloc/weather_bloc.dart';
-import 'package:weather_project/pages/home_page_weather/widgets/listview.dart';
-import 'package:weather_project/pages/home_page_weather/widgets/padding.dart';
+import 'package:weather_project/pages/home_page_weather/widgets/listView.dart';
 import 'package:weather_project/res/styles.dart';
 import 'package:weather_project/res/texts.dart';
 import 'package:weather_project/weather_repository/abstract_weather_repository.dart';
@@ -42,7 +41,6 @@ class _HomePageState extends State<HomePage> {
             AppTexts.textWeather,
             style: AppStyles.appBar,
           ),
-          actions: [IconButtonCustom()],
         ),
         body: ListViewCustom(
           weatherListBloc: _weatherListBloc,

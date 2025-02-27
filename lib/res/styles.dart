@@ -15,7 +15,7 @@ class AppStyles {
   static const headerSpecial3 = TextStyle(
     fontWeight: FontWeight.w600,
     color: Colors.black,
-    fontSize: 20,
+    fontSize: 15,
   );
   static const headerSpecial4 = TextStyle(
     fontWeight: FontWeight.w600,

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "942534473762",
+    "project_id": "weather-138dc",
+    "storage_bucket": "weather-138dc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942534473762:android:2e1be9f8a288f5bda6f27b",
+        "android_client_info": {
+          "package_name": "com.zerg.weather_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhoBugcxH3CtOKkIXqP-rI_RDjCpwJPJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

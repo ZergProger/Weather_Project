@@ -7,5 +7,5 @@ class WeatherListLoad extends WeatherEvent {
   final Completer? completer;
 
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [completer];
 }
